@@ -115,7 +115,7 @@ And from code
         parallaxView.setParallaxMovementDistance(dstanceInPixels)
 ```
 
-+Last, but not least, you can change the behavior of the first layer from the user perspective. 
++ Last, but not least, you can change the behavior of the first layer from the user perspective. 
 By default, last layer added will no apply any parallax effect, but you can change this behavior:
 
 ```xml
@@ -130,7 +130,7 @@ By default, last layer added will no apply any parallax effect, but you can chan
         parallaxView.firstLayerAppliesParallax(true)
 ```
 
-##Hey we are not done yet!
+## Hey we are not done yet!
 
 LayerView can be customized too by defining if its content will be padded. 
 Because ParallaxView applies translation movements to achieve parallax effect, LayerView instances applies negative margins by default to ensure the Layer border will never be visible.
@@ -149,7 +149,7 @@ If any of your layers does not need this behaviour you can disable it (think as 
         LayerView(this).useParallaxPadding = false
 ```
 
-##Now we are done!
+## Now we are done!
 
 Check out the sample app and do not forget to star this repo if you find it useful!
 
