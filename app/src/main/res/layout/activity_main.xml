@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ablanco.parallax.ParallaxContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <com.ablanco.parallax.ParallaxView
+        android:id="@+id/parallaxView"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        app:cardBackgroundColor="@color/grayDark"
+        app:touchMode="lifted">
+
+        <com.ablanco.parallax.LayerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:useParallaxPadding="false">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="50dp"
+                android:src="@drawable/settingslayer2" />
+        </com.ablanco.parallax.LayerView>
+
+        <com.ablanco.parallax.LayerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:useParallaxPadding="false">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="30dp"
+                android:src="@drawable/settingslayer1" />
+        </com.ablanco.parallax.LayerView>
+
+        <com.ablanco.parallax.LayerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/settingslayer3" />
+        </com.ablanco.parallax.LayerView>
+
+
+    </com.ablanco.parallax.ParallaxView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <CheckBox
+            android:id="@+id/cbFirstLayerParallax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Apply parallax to first layer" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Parallax movement distance" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="15" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Touch mode" />
+
+        <RadioGroup
+            android:id="@+id/rgTouchMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbLifted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Lifted" />
+
+            <RadioButton
+                android:id="@+id/rbPressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pressed" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+</com.ablanco.parallax.ParallaxContainer>

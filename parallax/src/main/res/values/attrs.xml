@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ParallaxView">
+        <attr name="parallaxMovementDistance" format="dimension" />
+        <attr name="firstLayerAppliesParallax" format="boolean" />
+        <attr name="touchMode" format="enum">
+            <enum name="pressed" value="0" />
+            <enum name="lifted" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="LayerView">
+        <attr name="useParallaxPadding" format="boolean" />
+    </declare-styleable>
+</resources>
